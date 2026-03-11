@@ -17,6 +17,8 @@ const teamMembers = [
   }
 ];
 
+const imageMap = new Map(PlaceHolderImages.map((img) => [img.id, img]));
+
 export function Team() {
   return (
     <section id="team" className="py-24 bg-muted/30">
@@ -30,7 +32,7 @@ export function Team() {
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
           {teamMembers.map((member, index) => {
-            const image = PlaceHolderImages.find((img) => img.id === member.imageId);
+            const image = imageMap.get(member.imageId);
             return (
               <div key={index} className="flex flex-col md:flex-row gap-8 items-center bg-background p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                 <div className="relative h-48 w-48 rounded-2xl overflow-hidden shrink-0">
