@@ -5,15 +5,15 @@ export function Footer() {
   return (
     <footer className="bg-background text-white py-24 relative overflow-hidden border-t border-accent/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 lg:gap-24 mb-24">
-          <div className="col-span-1 md:col-span-2 space-y-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 lg:gap-24 mb-16 lg:mb-24">
+          <div className="col-span-1 sm:col-span-2 space-y-6 lg:space-y-8">
             <Link href="/" className="flex items-center gap-3">
               <div className="p-3 bg-accent rounded-2xl text-accent-foreground shadow-xl shadow-accent/10">
                 <Cpu size={28} strokeWidth={2.5} />
               </div>
-              <span className="font-headline text-2xl font-black tracking-tighter text-white">Sergeev Consulting</span>
+              <span className="font-headline text-xl sm:text-2xl font-black tracking-tighter text-white">Sergeev Consulting</span>
             </Link>
-            <p className="text-muted-foreground max-w-sm text-lg leading-relaxed font-medium italic">
+            <p className="text-muted-foreground max-w-sm text-base sm:text-lg leading-relaxed font-medium italic">
               "Мы не просто предсказываем будущее. Мы проектируем системы, которые его строят."
             </p>
             <div className="flex gap-6">
@@ -63,9 +63,9 @@ export function Footer() {
           </div>
         </div>
         
-        <div className="pt-12 border-t border-accent/10 flex flex-col md:flex-row justify-between items-center gap-6 text-muted-foreground/40 text-xs font-black uppercase tracking-[0.2em]">
+        <div className="pt-12 border-t border-accent/10 flex flex-col md:flex-row justify-between items-center gap-6 text-muted-foreground/40 text-xs font-black uppercase tracking-[0.2em] text-center md:text-left">
           <p>© {new Date().getFullYear()} Sergeev Consulting | Сергеев Консалтинг.</p>
-          <p className="text-accent/40 tracking-[0.4em]">Спроектировано для совершенства</p>
+          <p className="text-accent/40 tracking-[0.2em] sm:tracking-[0.4em]">Спроектировано для совершенства</p>
         </div>
       </div>
     </footer>

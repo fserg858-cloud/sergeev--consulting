@@ -40,7 +40,7 @@ export function Solutions() {
   return (
     <section id="solutions" className="py-32 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row justify-between items-end mb-24 gap-8">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-16 lg:mb-24 gap-8">
           <div className="max-w-2xl">
             <h2 className="text-sm font-black uppercase tracking-[0.4em] text-accent mb-4">Меню решений</h2>
             <h3 className="text-4xl sm:text-5xl font-headline font-black text-white">

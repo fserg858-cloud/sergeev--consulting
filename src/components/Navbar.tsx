@@ -72,12 +72,12 @@ export function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block text-xs font-black uppercase tracking-widest text-muted-foreground hover:text-accent transition-colors"
+                className="block py-3 px-4 text-sm font-black uppercase tracking-widest text-muted-foreground hover:text-accent transition-colors"
               >
                 {link.name}
               </Link>
             ))}
-            <Button asChild className="w-full bg-accent text-accent-foreground mt-4 rounded-xl font-black text-xs uppercase tracking-widest">
+            <Button asChild className="w-full h-12 bg-accent text-accent-foreground mt-4 rounded-xl font-black text-xs uppercase tracking-widest">
               <Link href="#contact" onClick={() => setIsOpen(false)}>
                 Начать разбор
               </Link>
