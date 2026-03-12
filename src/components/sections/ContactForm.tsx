@@ -46,21 +46,21 @@ export function ContactForm() {
   return (
     <section id="contact" className="py-32 bg-background relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-bold uppercase tracking-[0.2em] mb-8">
             <Sparkles size={14} className="animate-pulse" />
             <span>Финальный шаг</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl font-headline font-black text-white mb-6 text-gradient">Давайте проверим вашу воронку</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-medium">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-headline font-black text-white mb-6 text-gradient">Давайте проверим вашу воронку</h2>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-medium">
             За 20 минут бесплатно покажем, где AI даст быстрый и измеримый эффект именно в вашем бизнесе.
           </p>
         </div>
 
-        <div className="premium-glass p-8 sm:p-12 rounded-[3rem] border border-accent/20 shadow-2xl">
+        <div className="premium-glass p-6 sm:p-12 rounded-[2rem] sm:rounded-[3rem] border border-accent/20 shadow-2xl">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-              <div className="grid md:grid-cols-2 gap-8">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 sm:space-y-8">
+              <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
                 <FormField
                   control={form.control}
                   name="name"
@@ -105,8 +105,8 @@ export function ContactForm() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full bg-accent text-accent-foreground py-8 rounded-2xl text-xl font-black shadow-2xl shadow-accent/30 hover:scale-[1.02] transition-transform border-none">
-                Записаться на разбор <Send className="ml-2 h-6 w-6" />
+              <Button type="submit" className="w-full h-16 sm:h-20 bg-accent text-accent-foreground rounded-2xl text-lg sm:text-xl font-black shadow-2xl shadow-accent/30 hover:scale-[1.02] transition-transform border-none">
+                Записаться на разбор <Send className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
               </Button>
             </form>
           </Form>

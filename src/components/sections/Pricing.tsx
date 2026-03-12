@@ -14,12 +14,12 @@ export function Pricing() {
           <h3 className="text-4xl sm:text-5xl font-headline font-black text-white">Прозрачные условия</h3>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
-          <div className="premium-glass p-12 rounded-[3rem] border border-accent/20 flex flex-col justify-between">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+          <div className="premium-glass p-8 sm:p-12 rounded-[2rem] sm:rounded-[3rem] border border-accent/20 flex flex-col justify-between">
             <div>
               <div className="text-accent font-black uppercase tracking-[0.3em] text-xs mb-6">Старт</div>
-              <h4 className="text-4xl font-black text-white mb-4 tracking-tight text-gradient">Разбор воронки</h4>
-              <div className="text-5xl font-black text-white mb-10">0 ₽</div>
+              <h4 className="text-3xl sm:text-4xl font-black text-white mb-4 tracking-tight text-gradient">Разбор воронки</h4>
+              <div className="text-4xl sm:text-5xl font-black text-white mb-10">0 ₽</div>
               <ul className="space-y-6 mb-12">
                 {["Аудит текущей воронки", "Поиск узких мест", "Расчет ROI пилота", "План внедрения за неделю"].map(item => (
                   <li key={item} className="flex items-center gap-4 text-muted-foreground font-bold">
@@ -36,11 +36,11 @@ export function Pricing() {
             </Button>
           </div>
 
-          <div className="bg-secondary/60 p-12 rounded-[3rem] border border-white/5 flex flex-col justify-between">
+          <div className="bg-secondary/60 p-8 sm:p-12 rounded-[2rem] sm:rounded-[3rem] border border-white/5 flex flex-col justify-between mt-8 lg:mt-0">
             <div>
               <div className="text-muted-foreground font-black uppercase tracking-[0.3em] text-xs mb-6">Результат</div>
-              <h4 className="text-4xl font-black text-white mb-4 tracking-tight">Разработка пилота</h4>
-              <div className="text-4xl font-black text-white mb-4">от 60 000 ₽</div>
+              <h4 className="text-3xl sm:text-4xl font-black text-white mb-4 tracking-tight">Разработка пилота</h4>
+              <div className="text-3xl sm:text-4xl font-black text-white mb-4">от 60 000 ₽</div>
               <div className="text-muted-foreground font-medium mb-10">до 120 000 ₽ (зависит от сложности)</div>
               <div className="grid grid-cols-2 gap-6 mb-12">
                 <div className="premium-glass p-6 rounded-2xl border border-white/5">

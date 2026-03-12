@@ -27,9 +27,9 @@ export function Hero() {
               Без перестройки процессов с нуля, найма новых людей и долгих теорий. Внедряем один понятный пилот под ключ. Первый шаг — бесплатный разбор воронки (20-30 мин).
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground h-16 px-10 rounded-2xl text-lg font-black shadow-2xl shadow-accent/20 transition-all hover:scale-105 border-none">
-                <Link href="#contact" className="flex items-center gap-2">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center">
+              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground h-16 px-8 sm:px-10 rounded-2xl text-base sm:text-lg font-black shadow-2xl shadow-accent/20 transition-all hover:scale-105 border-none w-full sm:w-auto">
+                <Link href="#contact" className="flex items-center justify-center gap-2">
                   Записаться на разбор <ArrowRight size={20} />
                 </Link>
               </Button>

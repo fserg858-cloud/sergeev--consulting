@@ -48,10 +48,10 @@ export function ChatWidget() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-[60]">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[60]">
       {isOpen ? (
-        <Card className="w-[350px] sm:w-[400px] h-[500px] flex flex-col shadow-2xl border-accent/20 bg-secondary/95 backdrop-blur-xl animate-in slide-in-from-bottom-5 rounded-[2rem] overflow-hidden">
-          <CardHeader className="bg-primary text-white p-5 flex flex-row items-center justify-between border-b border-accent/10">
+        <Card className="w-[calc(100vw-2rem)] sm:w-[400px] h-[calc(100vh-8rem)] max-h-[500px] flex flex-col shadow-2xl border-accent/20 bg-secondary/95 backdrop-blur-xl animate-in slide-in-from-bottom-5 rounded-2xl sm:rounded-[2rem] overflow-hidden">
+          <CardHeader className="bg-primary text-white p-4 sm:p-5 flex flex-row items-center justify-between border-b border-accent/10">
             <div className="flex items-center gap-3">
               <div className="bg-accent/20 p-2 rounded-xl text-accent">
                 <Bot size={20} />
@@ -120,9 +120,9 @@ export function ChatWidget() {
       ) : (
         <Button
           onClick={() => setIsOpen(true)}
-          className="h-16 w-16 rounded-2xl shadow-[0_20px_50px_rgba(198,138,83,0.3)] bg-accent hover:bg-accent/90 text-accent-foreground transition-all hover:scale-110 active:scale-95 group border-none"
+          className="h-14 w-14 sm:h-16 sm:w-16 rounded-2xl shadow-[0_20px_50px_rgba(198,138,83,0.3)] bg-accent hover:bg-accent/90 text-accent-foreground transition-all hover:scale-110 active:scale-95 group border-none"
         >
-          <MessageCircle size={32} className="group-hover:rotate-12 transition-transform" />
+          <MessageCircle size={28} className="sm:w-8 sm:h-8 group-hover:rotate-12 transition-transform" />
         </Button>
       )}
     </div>
