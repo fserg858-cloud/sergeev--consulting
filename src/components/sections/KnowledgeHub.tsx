@@ -21,6 +21,8 @@ const articles = [
   }
 ];
 
+const imageMap = new Map(PlaceHolderImages.map((img) => [img.id, img]));
+
 export function KnowledgeHub() {
   return (
     <section id="knowledge" className="py-24 bg-muted/20">
@@ -39,7 +41,7 @@ export function KnowledgeHub() {
 
         <div className="grid md:grid-cols-2 gap-10">
           {articles.map((article, index) => {
-            const image = PlaceHolderImages.find((img) => img.id === article.imageId);
+            const image = imageMap.get(article.imageId);
             return (
               <Card key={index} className="overflow-hidden border-none shadow-md group cursor-pointer hover:shadow-xl transition-all">
                 <div className="relative h-64 w-full">

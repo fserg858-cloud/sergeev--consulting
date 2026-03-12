@@ -20,6 +20,8 @@ const projects = [
   }
 ];
 
+const imageMap = new Map(PlaceHolderImages.map((img) => [img.id, img]));
+
 export function Portfolio() {
   return (
     <section id="portfolio" className="py-32 bg-background relative overflow-hidden">
@@ -38,7 +40,7 @@ export function Portfolio() {
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {projects.map((project, index) => {
-            const image = PlaceHolderImages.find((img) => img.id === project.imageId);
+            const image = imageMap.get(project.imageId);
             return (
               <div key={index} className="group cursor-pointer">
                 <div className="relative aspect-[16/10] rounded-[3rem] overflow-hidden mb-10 shadow-2xl shadow-black border-2 border-white/5">
