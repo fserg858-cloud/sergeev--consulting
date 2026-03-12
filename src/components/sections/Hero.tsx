@@ -33,8 +33,8 @@ export function Hero() {
                   Записаться на разбор <ArrowRight size={20} />
                 </Link>
               </Button>
-              <div className="flex items-center gap-check text-muted-foreground font-bold text-sm uppercase tracking-widest px-4">
-                <CheckCircle2 size={18} className="text-accent mr-2" />
+              <div className="flex items-center gap-2 text-muted-foreground font-bold text-sm uppercase tracking-widest px-4">
+                <CheckCircle2 size={18} className="text-accent" />
                 <span>20–30 минут</span>
               </div>
             </div>
